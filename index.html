@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,800;1,500;1,800&display=swap" rel="stylesheet">
+
+    <!-- Link JavaScript -->
+    <script src="scripts.js" defer></script>
+
     <title>Tally Counter</title>
 </head>
 
@@ -41,10 +45,10 @@
     </aside> -->
 
     <main class="counter">
-        <input readonly type="text" class="counter_value" value="0">
+        <input readonly type="text" class="counter_value" value="0" data-key="number">
         <div class="counter_actions">
-            <button class="counter_button counter_button_first">-</button>
-            <button class="counter_button">+</button>
+            <button class="counter_button counter_button_first" data-key="subtract">-</button>
+            <button class="counter_button" data-key="add">+</button>
         </div>
     </main>
 

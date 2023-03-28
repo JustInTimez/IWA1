@@ -3,7 +3,7 @@
     --color-white: white;
     --color-dark-grey: #33333d;
     --color-medium-grey: #424250;
-    --color-light-grey: #d2d6dc;
+    --color-light-grey: #9ca3ae;
 }
 
 * {
@@ -21,6 +21,8 @@ body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 /* Header */
@@ -31,6 +33,7 @@ body {
 .header_title {
     font-size: 3rem;
     font-weight: 900;
+    color: var(--color-light-grey);
 }
 
 /* Controls */
@@ -65,7 +68,9 @@ body {
     color: var(--color-light-grey);
     font-size: 3rem;
     height: 10rem;
-    border-bottom: 1px solid var(--color-light-grey)
+    border-bottom: 1px solid var(--color-light-grey);
+    transition: transform 0.3s;
+    transform: translateY(10);
 }
 
 .counter_button:active {
@@ -87,7 +92,9 @@ body {
 .footer {
     background: var(--color-dark-grey);
     color: var(--color-light-grey);
-    align-self: flex-end;
+    padding: 2rem;
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 .footer_link {

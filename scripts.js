@@ -85,3 +85,24 @@ console.warn('Security scan starting')
 /* It is important to let user know when they can close the page  */
 
 console.info('Please wait for scan to complete before closing the browser.')
+
+
+// IWA 3.3 Challenge 1:
+
+/*
+ * 1. The import statement is incorrect. The module needs to be wrapped in {} and the spelling of 'from' was incorrect.
+    The other issue is that in the HTML file, the <script> tag needs to have "type="module" attribute attached to it.
+    The script is not executing correctly as the 'defer' attribute is missing, causing the JS to load first when the HTML needs to run first.
+    Also, the <footer> tag is outside of the <body> tag... (not sure if this was intended?)
+ * 2. Changes that need to happen would be wrapping the modules in {}, spelling 'from' correctly and then adding the two attributes (type="module" and defer)
+    I would also fix the indentation of the <head> tag in the HTML file as well as moving the <footer> tag into the body so that it is displayed.
+ * 
+*/
+
+import {company} from 'configuration';
+import {year} from 'configuration';
+
+const message = '© ' + company + ' (' + year + ')'
+document.querySelector('footer').innerText = message
+
+// IWA 3.4 Challenge 2:

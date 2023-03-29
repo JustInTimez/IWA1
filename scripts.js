@@ -105,4 +105,7 @@ import {year} from 'configuration';
 const message = '© ' + company + ' (' + year + ')'
 document.querySelector('footer').innerText = message
 
-// IWA 3.4 Challenge 2:
+// Variables and Lexical Scope:
+/* const and let
+ * const = constant (will never change) | let = variable (that can or will be chnaged later)
+ */

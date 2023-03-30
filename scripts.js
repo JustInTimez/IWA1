@@ -109,3 +109,23 @@ document.querySelector('footer').innerText = message
 /* const and let
  * const = constant (will never change) | let = variable (that can or will be chnaged later)
  */
+
+
+// IWA 7.3: Challenge 1
+
+const value = "3"
+console.log(value + 4 + value)
+
+/* The issue with the above code is that the variable "3" is seen as a string and not a number. 
+  *Change "3" to just the number 3 and then the output will be 10
+*/
+
+// IWA 7.4: Challenge 2
+const nickname= "Timmy";
+const firstname = "Timothy";
+
+console.log(`Good Morning, ${nickname} || {firstname}!`)
+
+/* The issue with the above code is that they need backticks (``) to wrap inside the console.log(`...`)
+  * firstname is missing the '$' in front of the first curly bracket.
+*/

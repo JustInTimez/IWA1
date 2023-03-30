@@ -1,4 +1,4 @@
-// Declare variables with let or const
+// Declare variables with let or const (uppercase naming convention = global 'settings')
 const FREE_WARNING = 'Free shipping only applies to single customer orders'
 const BANNED_WARNIN = 'Unfortunately we do not ship to your country of residence'
 const NONE_SELECTED = '0'
@@ -31,10 +31,9 @@ let pens = 5 * 'NONE_SELECTED'
 // let total = shoes + toys + shirts + batteries + pens
 
 
-
 // Remove && and format correctly
 if (shoes + batteries + pens + shirts > 1000) {
-	if (location === NAM && customers < 2) {   // Strict equality
+	if (location === 'NAM' && customers < 2) {   // Strict equality
 			if (location === RSA) {            // Strict equality
 		    shipping = 0 || calcShipping
         }
